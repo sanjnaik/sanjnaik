@@ -7,7 +7,6 @@ terraform {
       version = "3.0.1"
     }
   }
-  required_version = "~> 0.14"
 }
 
 variable "name_length" {
