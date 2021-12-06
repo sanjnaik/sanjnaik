@@ -1,3 +1,19 @@
+terraform {
+  required_providers {
+    intersight = {
+      source = "CiscoDevNet/intersight"
+      version = "1.0.19"
+    }
+  }
+}
+provider "intersight" {
+  # Configuration options
+}
+module "iks" {
+  source  = "terraform-cisco-modules/iks/intersight"
+  version = "2.1.2"
+  # insert the 9 required variables here
+}
 provider "intersight" {
   apikey    = var.apikey
   secretkey = var.secretkey
